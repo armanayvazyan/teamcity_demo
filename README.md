@@ -2,7 +2,7 @@
 
 Languages: ``Java``\
 Test Framework: ``JUnit5``\
-Libraries: ``Allure``
+Libraries: ``Allure``, ``Webdrivermanager``
 
 
 ## Pre-Installation
