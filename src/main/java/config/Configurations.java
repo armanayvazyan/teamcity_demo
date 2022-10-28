@@ -13,7 +13,7 @@ public class Configurations {
     public static final String BROWSER_TYPE;
     public static final String TC_USERNAME;
     public static final String TC_PASSWORD;
-    public static final String TC_ADMIN_TOKEN;
+    public static String TC_ADMIN_TOKEN;
 
     public static final String VCS_REPO_URL;
     public static final String VCS_USERNAME;
@@ -26,7 +26,6 @@ public class Configurations {
         BASE_URL = getProperty("base.url");
         TC_USERNAME = getProperty("tc.username");
         TC_PASSWORD = getProperty("tc.password");
-        TC_ADMIN_TOKEN = getProperty("tc.admin.token");
         BROWSER_TYPE = getProperty("browser.type");
 
         VCS_REPO_URL = getProperty("vcs.repo.url");

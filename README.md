@@ -10,13 +10,14 @@ Libraries: ``Allure``, ``Webdrivermanager``
 - Install Java (*11*) 
 - Install Maven (*3.6.3 or higher*)
 - Install Allure (*for test report generation*)
+- Install Lombok and Annotation Enable Processing
 
 ## Test Suite Run
 1) optional step: if there are changes in Test Suite, please remove allure-results folder from root if exists
 2) Run command (change values of env variables and put real data)
 ```bash
 mvn -DskipTests clean verify
-mvn test -Dtc.admin.token=<admin_token> -Dtc.password=<user_password>
+mvn test -Dtc.password=<user_password> -Dvcs.password=<vcs.password>
 ```
 
 ## Project Structure

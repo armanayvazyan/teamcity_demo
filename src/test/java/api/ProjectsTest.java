@@ -6,20 +6,10 @@ import api.service.VCSRootsService;
 import config.AuthMethod;
 import config.Configurations;
 import config.VCSName;
-import io.restassured.RestAssured;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.*;
 import utils.TestUtils;
 
-@TestInstance(TestInstance.Lifecycle.PER_METHOD)
-public class ProjectsTest {
-
-    @BeforeEach
-    void init() {
-        RestAssured.filters(new ErrorFilter());
-    }
+public class ProjectsTest extends BaseTest{
 
     private final String projectName = TestUtils.generateProjectName();
     private final String projectId = TestUtils.generateProjectId(projectName);
