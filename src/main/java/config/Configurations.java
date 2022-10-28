@@ -15,6 +15,10 @@ public class Configurations {
     public static final String TC_PASSWORD;
     public static final String TC_ADMIN_TOKEN;
 
+    public static final String VCS_REPO_URL;
+    public static final String VCS_USERNAME;
+    public static final String VCS_PASSWORD;
+
     private static final Properties configs;
 
     static {
@@ -24,6 +28,10 @@ public class Configurations {
         TC_PASSWORD = getProperty("tc.password");
         TC_ADMIN_TOKEN = getProperty("tc.admin.token");
         BROWSER_TYPE = getProperty("browser.type");
+
+        VCS_REPO_URL = getProperty("vcs.repo.url");
+        VCS_USERNAME = getProperty("vcs.username");
+        VCS_PASSWORD = getProperty("vcs.password");
     }
 
     public static String getProperty(String key) {
